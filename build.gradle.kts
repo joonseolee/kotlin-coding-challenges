@@ -14,6 +14,7 @@ repositories {
 dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.12.0")
     testImplementation("org.amshove.kluent:kluent:1.73")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.12.0")
 }
 
 sourceSets {
@@ -36,7 +37,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(19)
+    jvmToolchain(17)
 }
 
 spotless {
